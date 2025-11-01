@@ -8,7 +8,7 @@ class $modify(MyMenuLayer, MenuLayer) {
 		if (!MenuLayer::init()) return false;
 
 		auto myButton = CCMenuItemExt::createSpriteExtraWithFrameName("GJ_likeBtn_001.png", 1.f, [](auto){
-			FLAlertLayer::create("Geode", "Hello from my custom mod!", "OK")->show(
+			FLAlertLayer::create("Geode", "Hello from my custom mod!", "OK")->show();
 		});
 	    myButton->setID("my-button"_spr);
 
